@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transitions</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: #FB0303;
+			transition: width 3s, height 4s, transform 3s; /*// Dãn theo 2 chiều luôn*/
+			/*// kết hợp luôn với transform*/
+			transition-delay: 1s; /*// Thời gian trì hoãn transition*/ 
+		}
+
+		div:hover { /*// Đưa mouse vào thì tiến hành chuyển đông*/
+			width: 300px;
+			height: 300px;
+			transform: rotate(3600deg);
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

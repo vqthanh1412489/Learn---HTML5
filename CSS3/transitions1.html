@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transitions 1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div {
+			display: block;
+			border-radius: 20px;
+			font-size: 10px;
+			text-align: center;
+			line-height: 100px;
+			width: 100px;
+			height: 100px;
+			margin: 50px;
+			background-color: #4113EA;
+
+			/*Transitions - transform */
+			transition: width 3s, height 3s, transform 3s;
+			
+			/*Box Shadow*/
+			-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+			-moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+			box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+			
+			
+		}
+
+		div:hover {
+			width: 300px;
+			height: 300px;
+			transform: rotate3d(0,1,0,360deg);
+		}
+		p {
+			font-size: 10px;
+			transition: width 3s, height 3s, transform 3s;
+			/*Text Shadow*/
+			text-shadow: 3px 7px 4px rgba(77, 153, 0, 0.98);
+		}
+		p:hover {
+			transform: rotate3d(0,1,0,360deg);
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div><p>Vu Quoc Thanh</p></div>
+</body>
+</html>

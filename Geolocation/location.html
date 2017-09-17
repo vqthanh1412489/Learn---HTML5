@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geolocation</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<!-- Lấy ra vị trí hiện tại của bạn -->
+	<div id="imageMap">A</div>
+	<input type="button" name="button" id="button" value="Show Location" onclick="getLocation()">
+
+	<script type="text/javascript">
+		let divDemo = document.getElementById('imageMap');
+
+		function getLocation(){
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}
+
+		function showPosition(pos){
+			divDemo.innerHTML = 'Kinh do: '  + pos.coords.latitude + '<br/>' + 'Vi do: ' + pos.coords.longitude;
+		}
+	</script>
+</body>
+</html>

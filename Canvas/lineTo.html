@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Line</title>
+</head>
+<body>
+	<canvas id="myCanvas" width="1000" height="1000"></canvas>
+	<script type="text/javascript">
+		let canvas = document.getElementById('myCanvas');
+		let ctx = canvas.getContext('2d');
+
+		ctx.beginPath();
+		ctx.moveTo(0, 0); // Vị trí điểm đầu
+		ctx.lineTo(500, 0); // Vị trí điểm next
+		ctx.lineTo(500, 250);
+		ctx.lineTo(0, 250);
+		ctx.lineTo(0, 0);
+		ctx.lineTo(500, 250);
+		ctx.moveTo(0, 250); // Nhắc bút lên để vào điểm này
+		ctx.lineTo(500, 0);  // vẽ tới điểm này
+		ctx.moveTo(0, 250); //  Nhắc bút lên để vào điểm này
+		ctx.lineTo(250, 350);
+		ctx.lineTo(500, 250); // Điểm kết thúc hỉnh
+		ctx.lineWidth = 5; // Width 
+		ctx.strokeStyle = 'red'; // Clor stroke
+		ctx.stroke(); // Vẽ
+
+	</script>
+</body>
+</html>

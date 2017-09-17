@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drow Circle</title>
+	<meta charset="utf-8">
+	<style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+</head>
+<body>
+	<canvas id="myCanvas" width="600" height="600"></canvas>
+	<script type="text/javascript">
+		let canvas = document.getElementById('myCanvas');
+		let context = canvas.getContext('2d');
+		let dx = canvas.width / 2; // Lấy ra để vẽ ngay vị trí tâm hình tròn là 0 , 0
+		let dy = canvas.height / 2;
+
+		context.beginPath();
+		context.arc(dx, dy, 150, 0.7 * Math.PI, 2 * Math.PI);
+		context.fillStyle = 'green'; 
+		context.fill(); // Tô màu bên trong
+		context.lineWidth = 10;
+		// context.stroke(); // Vẽ Đường viền
+	</script>
+</body>
+</html>

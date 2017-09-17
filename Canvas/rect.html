@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rectangle</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<canvas id="myCanvas" width="500" height="600"></canvas>
+	<script type="text/javascript">
+		let canvas = document.getElementById('myCanvas');
+		let context = canvas.getContext('2d');
+
+		// Red
+		context.beginPath();
+		context.rect(0, 0, 400, 200);
+		context.lineWidth = 8;
+		context.strokeStyle = 'red';
+		context.stroke();
+
+		// Green
+		context.beginPath();
+		context.rect(30, 30, 50, 50);
+		context.strokeStyle = 'green';
+		context.lineWidth = 5;
+		context.stroke();
+
+		// Blue
+		context.beginPath();
+		context.rect(50, 50, 150, 100);
+		context.strokeStyle = 'blue';
+		context.lineWidth = 10;
+		context.stroke();
+	</script>
+</body>
+</html>

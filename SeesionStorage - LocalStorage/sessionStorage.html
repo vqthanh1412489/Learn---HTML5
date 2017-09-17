@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Session Storage</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+		// Log ra số lần load lại trang we, Được lưu trong biến sessionStorage.hits
+		if (sessionStorage.hits){
+			sessionStorage.hits = Number(sessionStorage.hits) + 1;
+		}else{
+			sessionStorage.hits = 1;
+		}
+
+
+		document.write(sessionStorage.hits);
+	</script>
+</head>
+<body>
+	<h1 id="thanh">Refresh Increamemt Values</h1>
+</body>
+</html>

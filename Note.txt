@@ -1,0 +1,25 @@
+1. Chèn video vào trang:
+    + Chèn nhanh: 
+        <video src ="duong dan" control="" width="??>" height="???"></video>
+    + Chèn theo định dạng video:
+        <video control="" width="??>" height="???">
+            <source src="????" type="video/mp4"></source>
+            <source src="????" type="video/3gp"></source>  //Nếu không có file .mp4 thì trình duyệt sẽ show file .3gp
+        </video>
+    + Attr: 
+        - autoplay : Play nhạc sau khi web load luôn.
+        - loop : Auto Replay
+
+2. Chèn Audio
+    + Không được cài đặt width và height: Có kích thước defaul
+    + Các Attr tương tự như là Video
+
+3. Canvas
+    + Vẽ các hình đơn giản 2d:
+        - rect(0, 0, 100, 150) : Vị trí bắt đầu, width, height
+        - circle(0, 0, 0 * Math.PI, 2 * Math.PI) : Vẽ hình tròn tại điểm tâm là: (0, 0), bắt đầu vẽ từ vị trí 0 tới bị trí 2Pi (1 đường tròn)
+        - google nhé còn nhiều lắm:
+        
+
+        
+
